@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#000000"/>
+      <stop offset="0.55" stop-color="#2B1100"/>
+      <stop offset="1" stop-color="#CC5500"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF7A00" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FF7A00" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#FF7A00" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <rect x="-400" y="0" width="400" height="300" fill="url(#shine)">
+    <animate attributeName="x" from="-400" to="1200" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <g fill="#FF7A00">
+    <circle cx="1020" cy="60" r="5" opacity="0.5"><animate attributeName="cy" values="60;40;60" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="1100" cy="210" r="8" opacity="0.35"><animate attributeName="cy" values="210;190;210" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="900" cy="250" r="4" opacity="0.5"><animate attributeName="cy" values="250;232;250" dur="3.5s" repeatCount="indefinite"/></circle>
+    <circle cx="960" cy="130" r="3" opacity="0.6"><animate attributeName="cy" values="130;112;130" dur="4.5s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="600" y="128" font-size="64" font-weight="800" fill="#FFFFFF" letter-spacing="4">REHMAN SADAQAT
+      <animate attributeName="opacity" from="0" to="1" dur="1.2s" fill="freeze"/>
+    </text>
+    <rect x="520" y="152" width="160" height="4" rx="2" fill="#FF7A00">
+      <animate attributeName="width" from="0" to="160" dur="1.4s" fill="freeze"/>
+    </rect>
+    <text x="600" y="200" font-size="28" font-weight="600" fill="#FF9A3C" letter-spacing="2">AI ENGINEER &amp; FULL STACK DEVELOPER
+      <animate attributeName="opacity" from="0" to="1" dur="1.8s" fill="freeze"/>
+    </text>
+    <text x="600" y="240" font-size="20" fill="#FFFFFF" opacity="0.85">Helping Business Scale With Digital Technology</text>
+  </g>
+</svg>
